@@ -4,15 +4,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <!-- Bootstrap CSS  -->
+    <title>Curriculum Gonzalo Lopez</title>
+    <link rel="shortcut icon" href="img/gonlo.jpg" type="image/x - icon">
+    <!-- ***** Bootstrap CSS ***** -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="social-icons/fonts.css">
   </head>
   <body>
-    <!-- Barra de Navegación -->
+    <!-- ***** Barra de Navegación ***** -->
       <nav class="sticky-top"> 
         <ul class="nav justify-content-center bg-body-tertiary">
           <li class="nav-item">
@@ -29,10 +30,10 @@
           </li>
         </ul>
       </nav>
-      <!-- Banner Bienvenidos-->
+      <!-- ***** Banner Bienvenidos ***** -->
       <header>
-        <img src="img/banner-definitivo.jpg" class="img-fluid" alt="...">
-        <!-- Sobre mi -->
+        <img src="img/banner-definitivo.jpg" class="img-fluid" alt="banner gonlo graphic & web design">
+        <!-- ***** Sobre mi ***** -->
           <div class="container mt-2" id="Sobre mi">
           <div class="row d-flex justify-content-center">
 
@@ -41,7 +42,7 @@
                   <div class="card p-3 py-4">
                       
                       <div class="text-center">
-                          <img src="img/foto-perfil.png" width="100" class="rounded-circle">
+                          <img src="img/foto-perfil.png" width="100" class="rounded-circle" alt="foto perfil Gonzalo Lopez">
                       </div>
                       
                       <div class="text-center">
@@ -83,9 +84,8 @@
       </div>
       </header>
       
-      <!-- Habilidades -->
+      <!-- ***** Habilidades *****  -->
       <h5>Habilidades</h5>
-      <!-- <img src="img/banner-habilidades2.jpg" class="img-fluid" alt="...">   -->
       <div class="container">
         <div class="skill-bx">
           <div class="left-bx">
@@ -136,7 +136,7 @@
         </div>    
       </div>
 
-      <!-- Timeline-->
+      <!-- ***** Timeline ***** -->
 
       <div class="container my-5">
         <div class="row">
@@ -170,14 +170,14 @@
         </div>
     </div>
 
-      <!-- Trabajos -->
+      <!-- ***** Trabajos ***** -->
 
       <div class="container" id="Trabajos">
         <h5>Trabajos</h5>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card h-100 bg-light">
-                <img src="img/galeria-1.jpg" class="card-img-top" alt="...">
+                <img src="img/galeria-1.jpg" class="card-img-top" alt="diseño para instagram">
                 <div class="card-body">
                   <h6 class="card-title">Redes sociales</h6>
                   <p class="card-text">Diseño de contenido para instagram de Gimnasio y rediseño de logotipo.</p>
@@ -186,7 +186,7 @@
             </div>
             <div class="col">
               <div class="card h-100 bg-light">
-                <img src="img/galeria-2.jpg" class="card-img-top" alt="...">
+                <img src="img/galeria-2.jpg" class="card-img-top" alt="diseño de logotipo">
                 <div class="card-body">
                   <h6 class="card-title">Branding</h6>
                   <p class="card-text">Aqui el desafio fue realizar el logotipo para una tienda de celulares.</p>
@@ -195,7 +195,7 @@
             </div>
             <div class="col">
               <div class="card h-100 bg-light">
-                <img src="img/galeria-3.jpg" class="card-img-top" alt="...">
+                <img src="img/galeria-3.jpg" class="card-img-top" alt="diseño de pagina web">
                 <div class="card-body">
                   <h6 class="card-title">Pagina Web</h6>
                   <p class="card-text">En esta oportunidad se creo una "landing page" para tecnico en informatica.</p>
@@ -207,11 +207,11 @@
           <br>
     </div>  
 
-    <!-- Contacto -->
+    <!-- ***** Contacto *****  -->
 
     <div class="container" id="Contacto">
       <h5>Contacto</h5>
-      <form>      
+      <form id="form" action="">      
         <input name="nombre" type="text" class="feedback-input" id="nombre" placeholder="Nombre" required="" />   
         <input name="email" type="text" class="feedback-input" id="email" pattern="[^ @]*@[^ @]*" placeholder="Email" required="" />
         <textarea name="mensaje" class="feedback-input" id="mensaje" placeholder="Mensaje" required=""></textarea>
@@ -220,7 +220,7 @@
       <a href="mailto:gonlodesign@gmail.com" id="correojava">mail</a>
     </div>  
 
-    <!--Footer  -->
+    <!-- ***** Footer ***** -->
 
     <footer>
     <div class="container">
@@ -232,7 +232,7 @@
     </div>
     </footer> 
 
-    <!-- whatsapp -->
+    <!--  ***** whatsapp ***** -->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <a href= "https://api.whatsapp.com/send?phone=543794221497&text=Hola!%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20" class="floatt" target="_blank">
@@ -242,7 +242,7 @@
   <script src="js/bootstrap.min.js"></script>
     <!-- Correo JAVA -->
   <script>
-    const $form = document.querySelector('#contact')
+    const $form = document.querySelector('#form')
     const $buttonMailto = document.querySelector('#correojava')
 
     $form.addEventListener('submit', handleSubmit)
@@ -250,7 +250,7 @@
     function handleSubmit(event) {
       event.preventDefault()
       const form = new FormData(this)
-      $buttonMailto.setAttribute('href', `mailto:gonlodesign@gmail.com?subject=asunto: ${form.get('asunto')} nombre: ${form.get('nombre')}  correo: ${form.get('email')}&body=${form.get('mensaje')}`)
+      $buttonMailto.setAttribute('href', `mailto:gonlodesign@gmail.com?subject=asunto: ${form.get('')} nombre: ${form.get('nombre')}  correo: ${form.get('email')}&body=${form.get('mensaje')}`)
       $buttonMailto.click()
     }     
 </script>
