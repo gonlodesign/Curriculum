@@ -1,11 +1,21 @@
-/* Autor: Gonzalo Lopez / Whatsapp: +54 3794 221497 / Gmail: gonzaa.915@gmail.com / Instagram: @gonlodesign */
+/*
+---------------------------------------------
+Autor: Gonzalo Lopez / Whatsapp: +54 3794 221497 / Gmail: gonzaa.915@gmail.com / Instagram: @gonlodesign 
+---------------------------------------------
+*/
+
 body{
     margin-top:20px;
     background:#fff;
     user-select: none;
 }
 
-/* Barra de Navegación */
+/*
+---------------------------------------------
+Barra de Navegación 
+---------------------------------------------
+*/
+
 .nav a{
   font-size: 16px;
   font-weight: 400;
@@ -13,7 +23,13 @@ body{
 .nav-item a:hover { 
   background-color: #EEEEEE;
 }
-/* Sobre mi */
+
+
+/* 
+---------------------------------------------
+Sobre mi 
+---------------------------------------------
+*/
 
 .card{
     border:none;
@@ -83,7 +99,12 @@ body{
 }
 
 
-/* Barra de habilidades */
+/*
+---------------------------------------------
+Barra de habilidades
+---------------------------------------------
+*/
+
 h5{
     text-align: center;
 }
@@ -256,7 +277,11 @@ h5{
     }
   }
 
-/* Timeline */
+/*
+---------------------------------------------
+Timeline
+---------------------------------------------
+*/
 
 .timeline {
     border-left: 3px solid #3663e2;
@@ -372,7 +397,12 @@ h5{
     left: 0;
     right: -55.8px;
 }
-/* Contacto */
+
+/*
+---------------------------------------------
+Contacto
+---------------------------------------------
+*/
 
 form { max-width:420px; margin:0 auto; }
 
@@ -421,7 +451,11 @@ textarea {
   opacity: 0;
 }
 
-  /* Footer */
+  /*
+  ---------------------------------------------
+  Footer
+  ---------------------------------------------
+  */
 
   footer p {
     text-align: center;
@@ -431,7 +465,11 @@ textarea {
     font-size: 13px;
   }
   
-  /*Whatsapp*/
+  /*
+  ---------------------------------------------
+  Whatsapp
+  ---------------------------------------------
+  */
 
 .floatt{
   position:fixed;
