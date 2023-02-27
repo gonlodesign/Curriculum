@@ -1,0 +1,458 @@
+/* Autor: Gonzalo Lopez / Whatsapp: +54 3794 221497 / Gmail: gonzaa.915@gmail.com / Instagram: @gonlodesign */
+body{
+    margin-top:20px;
+    background:#fff;
+    user-select: none;
+}
+
+/* Barra de Navegación */
+.nav a{
+  font-size: 16px;
+  font-weight: 400;
+}
+.nav-item a:hover { 
+  background-color: #EEEEEE;
+}
+/* Sobre mi */
+
+.card{
+    border:none;
+    position:relative;
+    overflow:hidden;
+    border-radius:8px;
+}
+
+.card:before{
+    
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+
+}
+
+.card:after{
+    
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+
+}
+
+.card:hover::after{
+    transform:scaleY(1);
+}
+
+
+.fonts{
+    font-size:14px;
+}
+
+.social-list{
+    display:flex;
+    list-style:none;
+    justify-content:center;
+    padding:0;
+}
+
+.social-list li{
+    padding:10px;
+    color:#3663e2;
+    font-size:19px;
+}
+.social-list a{
+    text-decoration: none;
+}
+
+.buttons button:nth-child(1){
+       border:1px solid #3663e2 !important;
+       color:#3663e2;
+       height:40px;
+}
+
+.buttons button:nth-child(1):hover{
+       border:1px solid #3663e2 !important;
+       color:#fff;
+       height:40px;
+       background-color:#3663e2;
+}
+
+
+/* Barra de habilidades */
+h5{
+    text-align: center;
+}
+.skill-bx{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    place-items: center;
+    margin: 0 auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  }
+  .skill-bx .left-bx{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .skill-bx .right-bx{
+    width: 100%;
+    display: flex;
+    flex-direction: column
+  
+  }
+  
+  .skill-bx .bar{
+    width: 100%;
+    margin: 20px 0;
+  }
+  .skill-bx .bar:first-child{
+    margin-top: 0;
+  }
+  
+  .skill-bx .bar .info{
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .skill-bx .bar .info span{
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+  }
+  
+  @keyframes showText {
+    100%{
+      opacity: 1;
+    }
+  }
+  .skill-bx .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #808e9b;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  
+  .skill-bx .progress-line span{
+    height: 100%;
+    background:#3663e2;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+   
+  
+  
+  @keyframes animate {
+    100%{
+      transform: scaleX(1);
+    }
+  }
+  
+  .skill-bx .progress-line.html span{
+    width: 60%;
+  }
+  
+  .skill-bx .progress-line.css span{
+    width: 60%;
+  }
+  
+  .skill-bx .progress-line.javascript span{
+    width: 40%;
+  }
+  
+  .skill-bx .progress-line.photoshop span{
+    width: 75%;
+  }
+  
+  .skill-bx .progress-line.illustrator span{
+    width: 70%;
+  }
+  
+  .skill-bx .progress-line.premiere span{
+    width: 65%;
+  }
+  
+  .skill-bx .progress-line span::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+  
+  .skill-bx .progress-line span::after{
+    position: absolute;
+    right: -12px;
+    top: -28px;
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+    padding: 1px 8px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+    
+  }
+  
+  @keyframes showText2 {
+    100%{
+      opacity: 1;
+    }
+  }
+  
+  .skill-bx .progress-line.html span::after{
+    content: '60%';
+  }
+  
+  .skill-bx .progress-line.css span::after{
+    content: '60%';
+  }
+  
+  .skill-bx .progress-line.javascript span::after{
+    content: '40%';
+  }
+  
+  .skill-bx .progress-line.photoshop span::after{
+    content: '75%';
+  }
+  
+  .skill-bx .progress-line.illustrator span::after{
+    content: '70%';
+  }
+  
+  .skill-bx .progress-line.premiere span::after{
+    content: '65%';
+  }
+
+  @media screen and (max-width: 768px) {
+    .skill-bx {
+        grid-template-columns: 1fr;
+        padding: 50px;
+        gap: 20px;
+    }
+  }
+
+/* Timeline */
+
+.timeline {
+    border-left: 3px solid #3663e2;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: rgba(114, 124, 245, 0.09);
+    margin: 0 auto;
+    letter-spacing: 0.2px;
+    position: relative;
+    line-height: 1.4em;
+    font-size: 1.03em;
+    padding: 50px;
+    list-style: none;
+    text-align: left;
+    max-width: 40%;
+}
+
+@media (max-width: 767px) {
+    .timeline {
+        max-width: 98%;
+        padding: 25px;
+    }
+}
+
+.timeline h1 {
+    font-weight: 300;
+    font-size: 1.4em;
+}
+
+.timeline h2,
+.timeline h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.timeline .event {
+    border-bottom: 1px dashed #3663e2;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .timeline .event {
+        padding-top: 30px;
+    }
+}
+
+.timeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.timeline .event:before,
+.timeline .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.timeline .event:before {
+    left: -207px;
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 120px;
+}
+
+@media (max-width: 767px) {
+    .timeline .event:before {
+        left: 0px;
+        text-align: left;
+    }
+}
+
+.timeline .event:after {
+    -webkit-box-shadow: 0 0 0 3px #3663e2;
+    box-shadow: 0 0 0 3px #3663e2;
+    left: -55.8px;
+    background: #fff;
+    border-radius: 50%;
+    height: 9px;
+    width: 9px;
+    content: "";
+    top: 5px;
+}
+
+@media (max-width: 767px) {
+    .timeline .event:after {
+        left: -31.8px;
+    }
+}
+
+.rtl .timeline {
+    border-left: 0;
+    text-align: right;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-right: 3px solid #3663e2;
+}
+
+.rtl .timeline .event::before {
+    left: 0;
+    right: -170px;
+}
+
+.rtl .timeline .event::after {
+    left: 0;
+    right: -55.8px;
+}
+/* Contacto */
+
+form { max-width:420px; margin:0 auto; }
+
+.feedback-input {
+  color:#000000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #3663e2;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #3663e2; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#3663e2;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:#fff;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#eee; color: #3663e2; }
+
+#correojava{
+  opacity: 0;
+}
+
+  /* Footer */
+
+  footer p {
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    color: #232d39;
+    font-size: 13px;
+  }
+  
+  /*Whatsapp*/
+
+.floatt{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index:100;
+  }
+  .floatt:hover {
+  text-decoration: none;  
+  color: #25d366;
+  background-color:#fff;
+  }
+
+.my-float{
+  margin-top:16px;
+}
